@@ -38,5 +38,5 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'de.tobiasdoetzer.aoc2021.AppKt'
+    mainClass = 'de.tobiasdoetzer.aoc2021.Day1Kt'
 }
