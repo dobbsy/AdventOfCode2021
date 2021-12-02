@@ -1,6 +1,6 @@
 package de.tobiasdoetzer.aoc2021
 
-fun part1(depths: List<Int>): Int {
+private fun part1(depths: List<Int>): Int {
     var retVal = 0
     for (i in 1..depths.lastIndex) {
         if (depths[i] > depths[i - 1]) retVal++
@@ -9,7 +9,7 @@ fun part1(depths: List<Int>): Int {
     return retVal
 }
 
-fun part2(depths: List<Int>): Int {
+private fun part2(depths: List<Int>): Int {
 
     val windowDepths = mutableListOf<Int>()
 
@@ -22,7 +22,7 @@ fun part2(depths: List<Int>): Int {
     }
 }
 
-fun main() {
+private fun main() {
     val input = readInputAsInts("day1_input.txt")
     println("The solution for part 1 is: ${part1(input)}")
     println("The solution for part 2 is: ${part2(input)}")
