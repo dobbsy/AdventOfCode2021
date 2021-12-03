@@ -2,7 +2,7 @@ package de.tobiasdoetzer.aoc2021
 
 import java.lang.IllegalArgumentException
 
-fun part1(instructions: List<String>): Int {
+private fun part1(instructions: List<String>): Int {
     var horizontalPos = 0
     var depth = 0
 
@@ -21,7 +21,7 @@ fun part1(instructions: List<String>): Int {
     return depth * horizontalPos
 }
 
-fun part2(instructions: List<String>): Int {
+private fun part2(instructions: List<String>): Int {
     var horizontalPos = 0
     var depth = 0
     var aim = 0
@@ -44,7 +44,7 @@ fun part2(instructions: List<String>): Int {
     return depth * horizontalPos
 }
 
-fun main() {
+private fun main() {
     val input = readInput("day2_input.txt")
     println("The solution of part 1 is: ${part1(input)}")
     println("The solution of part 2 is: ${part2(input)}")
